@@ -1,0 +1,28 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "vs-seti",
+    "typescript.validate.enable": true,
+    "editor.parameterHints": true,
+    "javascript.validate.enable": true,
+    "editor.wordBasedSuggestions": false,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "html.suggest.angular1": true,
+    "window.zoomLevel": 0,
+    "search.exclude": {
+        "**/build": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/.happypack": true,
+        "**/styleguide": true,
+        "**/node_modules/mycs": false
+    },
+    "eslint.autoFixOnSave": true,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "gitlens.blame.line.enabled": false
+}

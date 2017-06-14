@@ -118,10 +118,6 @@ export MIT_SCHEME_EXE="/usr/local/scheme"
 export NVM_DIR="/Users/anon/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Setting PATH for Python 3.5
-# The original version is saved in .profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
 
-# added by Anaconda3 4.1.1 installer
-export PATH="/Users/anon/anaconda/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"

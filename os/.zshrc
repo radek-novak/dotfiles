@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git osx yarn npm brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,3 +98,5 @@ export NVM_DIR="/Users/anon/.nvm"
 
 # add newline and an arrow to prompt
 PROMPT="$PROMPT"$'\n\u2192 '
+
+PATH="$PATH:/Users/$(whoami)/bin:/Applications/calibre.app/Contents/console.app/Contents/MacOS/"

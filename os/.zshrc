@@ -8,6 +8,7 @@ export ZSH=/Users/anon/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
+# ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -60,7 +61,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -89,6 +90,8 @@ source $ZSH/oh-my-zsh.sh
 # shopt -s checkwinsize
 # setopt -s checkwinsize
 
+VIRTUALENVWRAPPER_PYTHON=$(which python3)
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -99,4 +102,16 @@ export NVM_DIR="/Users/anon/.nvm"
 # add newline and an arrow to prompt
 PROMPT="$PROMPT"$'\n\u2192 '
 
-PATH="$PATH:/Users/$(whoami)/bin:/Applications/calibre.app/Contents/console.app/Contents/MacOS/"
+PATH="$PATH:/Users/$(whoami)/Library/Python/2.7/bin:/Users/$(whoami)/bin:/Applications/calibre.app/Contents/console.app/Contents/MacOS/"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/anon/.nvm/versions/node/v7.10.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/anon/.nvm/versions/node/v7.10.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/anon/.nvm/versions/node/v7.10.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/anon/.nvm/versions/node/v7.10.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+export BROWSERSTACK_USERNAME=lyaysanbiktimiro1
+export BROWSERSTACK_ACCESS_KEY=wNqGy1vQS9qKwKUj2Ugx
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+export GOPATH=$HOME/code/go

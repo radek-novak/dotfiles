@@ -121,3 +121,7 @@ export NVM_DIR="/Users/anon/.nvm"
 export PATH
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/Users/anon/Library/Python/2.7/bin:$PATH"
+
+# added by Anaconda3 5.0.1 installer
+export PATH="/Users/anon/anaconda3/bin:$PATH"

@@ -6,18 +6,20 @@
 	safecrlf = false
 	excludesfile = /Users/anon/.gitignore_global
 [alias]
-  co = checkout
-  ci = commit
-  st = status
-  br = branch
-  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
 	fa = fetch --all
 	pom = pull origin master
-[gui]
-	recentrepo = /home/anon/web/asciizer
-	recentrepo = /var/www/cesta-za-praci
+	push-to-staging = !git fetch --all && git co staging && git reset --hard origin/staging && git rebase origin/master
+	push-to-production = !git fetch --all && git co production && git reset --hard origin/production && git rebase origin/staging
+	up-master = !git fetch --all && git rebase origin/master
+	conflicts = diff --name-only --diff-filter=U
+	undo = reset HEAD~1
 [push]
 	default = matching
 [filter "media"]

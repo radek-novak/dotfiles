@@ -1,7 +1,4 @@
 {
-  // Place your settings in this file to overwrite the default settings
-  "workbench.colorTheme": "Atom One Dark",
-  "workbench.iconTheme": null,
   "typescript.validate.enable": true,
   "editor.parameterHints": true,
   "javascript.validate.enable": true,
@@ -58,4 +55,14 @@
   },
   "gitlens.historyExplorer.enabled": true,
   "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+  "breadcrumbs.enabled": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": null,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "workbench.colorTheme": "Atom One Dark",
+  "beautify.ignore": ["**/*.js", "**/*.jsx?", "**/*.tsx?"]
 }

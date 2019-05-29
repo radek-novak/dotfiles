@@ -2,13 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/anon/.oh-my-zsh
+export ZSH=/Users/$(whoami)/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
-# ZSH_THEME="avit"
+# ZSH_THEME="agnoster"
+ZSH_THEME="bira"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,7 +52,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx yarn npm brew)
+plugins=(git osx yarn npm brew z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,7 +100,7 @@ export NVM_DIR="/Users/anon/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 # add newline and an arrow to prompt
-PROMPT="$PROMPT"$'\n\u2192 '
+# PROMPT="$PROMPT"$'\n\u2192 '
 
 PATH="$PATH:/Users/$(whoami)/Library/Python/2.7/bin:/Users/$(whoami)/bin:/Applications/calibre.app/Contents/console.app/Contents/MacOS/"
 

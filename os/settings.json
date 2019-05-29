@@ -1,6 +1,7 @@
 {
+  "atomKeymap.promptV3Features": true,
+  "workbench.colorTheme": "Atom One Dark",
   "typescript.validate.enable": true,
-  "editor.parameterHints": true,
   "javascript.validate.enable": true,
   "editor.wordBasedSuggestions": false,
   "editor.quickSuggestions": {
@@ -8,7 +9,6 @@
     "comments": false,
     "strings": false
   },
-  "html.suggest.angular1": true,
   "window.zoomLevel": 0,
   "search.exclude": {
     "**/build": true,
@@ -23,20 +23,14 @@
   "gitlens.codeLens.recentChange.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "gitlens.codeLens.authors.enabled": false,
-  "editor.tabSize": 2,
   "editor.autoIndent": true,
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
-  "editor.minimap.enabled": false,
   "typescript.tsserver.log": "terse",
   "extensions.ignoreRecommendations": false,
   "editor.snippetSuggestions": "top",
-  "editor.formatOnPaste": false,
-  "vsicons.presets.foldersAllDefaultIcon": true,
-  "vsicons.presets.hideFolders": true,
   "explorer.confirmDragAndDrop": false,
-  "elm.formatCommand": "/Users/anon/.nvm/versions/node/v8.9.2/bin/elm-format",
   "prettier.eslintIntegration": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.enabled": false,
@@ -53,7 +47,6 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  "gitlens.historyExplorer.enabled": true,
   "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
   "breadcrumbs.enabled": true,
   "emmet.includeLanguages": {
@@ -63,6 +56,9 @@
   "workbench.iconTheme": null,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "workbench.colorTheme": "Atom One Dark",
-  "beautify.ignore": ["**/*.js", "**/*.jsx?", "**/*.tsx?"]
+  "editor.minimap.enabled": false,
+  "prettier.requireConfig": false,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }
